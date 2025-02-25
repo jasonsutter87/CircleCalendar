@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  .target {
+    position: relative;
+    width: 100%; /* size of the target container */
+    height: 100%; /* size of the target container */
+  }
+  
+  .ring {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers each ring in the parent */
+    width: 80%; /* relative size of the rings */
+    height: 80%; /* relative size of the rings */
+    border: 20px solid transparent; /* Default border thickness for all rings */
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ring-1 {
+    width: calc(100vw * 0.3);
+    height:  calc(100vw * 0.3);
+    border-color: rebeccapurple;
+    border-width: 25px; /* Increased thickness for the outermost ring */
+    background-color: rebeccapurple;
+
+    .line {
+        position: absolute;
+        width: 2px; /* Line thickness */
+        height: calc((100vw * 0.3) / 2); /* Radius of the circle */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: rotateZ('10 deg');
+        transform: translate(-50%, -100%) rotate(19deg);
+        transform-origin: bottom;
+    
+    }
+  }
+  
+  .ring-2 {
+    width: calc(100vw * 0.22);
+    height: calc(100vw * 0.22);
+    border-color: greenyellow;
+    border-width: 20px; /* Increased thickness for the second ring */
+    background-color: greenyellow;
+
+    .line {
+        position: absolute;
+        width: 2px; /* Line thickness */
+        height: calc((100vw * 0.22) / 2); /* Radius of the circle */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: rotateZ('10 deg');
+        transform: translate(-50%, -100%) rotate(40deg);
+        transform-origin: bottom;
+    
+    }
+  }
+  
+  .ring-3 {
+    width: calc(100vw * 0.17);
+    height: calc(100vw * 0.17);
+    border-color: #001aff;
+    border-width: 18px; /* Increased thickness for the third ring */
+    background-color: #001aff;
+
+    .line {
+        position: absolute;
+        width: 2px; /* Line thickness */
+        height:  calc((100vw * 0.17) / 2); /* Radius of the circle */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: rotateZ('10 deg');
+        transform: translate(-50%, -100%) rotate(86deg);
+        transform-origin: bottom;
+    
+    }
+  }
+  
+  .ring-4 {
+    width: calc(100vw * 0.13);
+    height: calc(100vw * 0.13);
+    border-color: #00e2a6;
+    border-width: 15px; /* Increased thickness for the fourth ring */
+    background-color: #00e2a6;
+
+    .line {
+        position: absolute;
+        width: 2px; /* Line thickness */
+        height: calc((100vw * 0.13) / 2); /* Radius of the circle */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: rotateZ('10 deg');
+        transform: translate(-50%, -100%) rotate(86deg);
+        transform-origin: bottom;
+    
+    }
+  }
+  
+  .ring-5 {
+    width: calc(100vw * 0.08);
+    height: calc(100vw * 0.08);
+    border-color: red;
+    border-width: 10px; /* Increased thickness for the innermost ring */
+    background-color: red;
+
+    .line {
+        position: absolute;
+        width: 2px; /* Line thickness */
+        height: calc((100vw * 0.08) / 2); /* Radius of the circle */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%) rotate(10deg);
+        transform-origin: bottom; /* Position the line at the center */
+      }
+  }
+  
