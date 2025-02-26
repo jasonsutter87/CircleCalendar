@@ -122,4 +122,22 @@ body, html {
   left: 50%;
   transform: translate(-50%, -100%) rotate(10deg);
   transform-origin: bottom; /* Position the line at the center */
+}
+
+.ring-6 {
+  width: 4.5vw;
+  height: 4.5vw;
+  border-color: #4a883e;
+  border-width: 10px; /* Increased thickness for the innermost ring */
+  background-color: #4a883e;
+}
+.ring-6 .line {
+  position: absolute;
+  width: 2px; /* Line thickness */
+  height: 2.25vw; /* Radius of the circle */
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(10deg);
+  transform-origin: bottom; /* Position the line at the center */
 }/*# sourceMappingURL=styles.css.map */
