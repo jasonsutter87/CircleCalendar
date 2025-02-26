@@ -134,3 +134,22 @@
       }
   }
   
+
+  .ring-6 {
+    width: calc(100vw * 0.045);
+    height: calc(100vw * 0.045);
+    border-color: #4a883e;
+    border-width: 10px; /* Increased thickness for the innermost ring */
+    background-color: #4a883e;
+
+    .line {
+        position: absolute;
+        width: 2px; /* Line thickness */
+        height: calc((100vw * 0.045) / 2); /* Radius of the circle */
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%) rotate(10deg);
+        transform-origin: bottom; /* Position the line at the center */
+      }
+  }
